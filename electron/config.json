@@ -1,0 +1,11 @@
+{
+  "scheme": "library",
+  "assetsDir": "assets",
+  "manifest": "assets/portraits/manifest.json",
+  "chat": {
+    "width": 760,
+    "height": 520,
+    "minWidth": 480,
+    "minHeight": 360
+  }
+}

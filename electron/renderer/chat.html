@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' library: data: http://127.0.0.1:* http://localhost:*; font-src 'self' library:; script-src 'self'; style-src 'self'">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="chat.css">
+  <title>铃木佳奈 · 聊天</title>
+</head>
+<body>
+  <div id="titlebar">
+    <span id="title">你的图书馆 · 铃木佳奈</span>
+    <button id="close" title="关闭" aria-label="关闭">&#10005;</button>
+  </div>
+  <div id="layout">
+    <aside id="sidebar">
+      <div id="functions">
+        <button class="fn" data-fn="shelf">书架</button>
+        <div id="bookshelf"></div>
+        <button class="fn" data-fn="papers">论文</button>
+        <div id="papers">
+          <div class="papers-subhead">原文</div>
+          <div id="papers-originals" class="papers-list"></div>
+          <div class="papers-subhead">解读</div>
+          <div id="papers-interpretations" class="papers-list"></div>
+        </div>
+        <button class="fn" data-fn="manga">漫画</button>
+        <div id="manga"></div>
+        <button class="fn" data-fn="settings">设置</button>
+      </div>
+      <img id="avatar" alt="铃木佳奈" draggable="false">
+    </aside>
+    <section id="chat">
+      <div id="messages"></div>
+      <form id="inputbar">
+        <input id="input" type="text" placeholder="和佳奈说点什么…" autocomplete="off">
+        <button type="submit">发送</button>
+      </form>
+    </section>
+    <section id="reader" hidden>
+      <div class="reader-topbar">
+        <button id="reader-back" class="reader-btn" type="button" title="返回" aria-label="返回">←</button>
+        <span id="reader-title">漫画</span>
+        <select id="reader-chapters"></select>
+      </div>
+      <div id="reader-stage">
+        <img id="reader-img" alt="漫画页面" draggable="false">
+        <div id="reader-empty">选择章节开始阅读</div>
+      </div>
+      <div class="reader-nav">
+        <button id="reader-prev" class="reader-btn" type="button">‹ 上一页</button>
+        <span id="reader-pageinfo">- / -</span>
+        <button id="reader-next" class="reader-btn" type="button">下一页 ›</button>
+      </div>
+    </section>
+    <section id="settings" hidden>
+      <div id="settings-header">
+        <button id="back-from-settings" type="button" title="返回聊天" aria-label="返回聊天">←</button>
+        <h2>设置</h2>
+      </div>
+      <div class="field">
+        <label>API 服务商</label>
+        <div id="api-configs"></div>
+        <button id="add-api" type="button">+ 添加服务商</button>
+      </div>
+      <div class="field">
+        <label for="font-size">字体大小</label>
+        <input id="font-size" type="number" min="10" max="40" step="1">
+      </div>
+      <div class="field">
+        <label for="font-family">字体选择</label>
+        <div class="field-row">
+          <select id="font-family"></select>
+          <button id="import-font" type="button">导入字体</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="pet-scale">图标大小</label>
+        <div class="field-row">
+          <input id="pet-scale" type="range" min="0.3" max="1.5" step="0.05">
+          <span id="pet-scale-val">0.5</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="books-dir">电子书目录</label>
+        <input id="books-dir" type="text" placeholder="books">
+      </div>
+      <div class="field">
+        <label for="suwayomi-url">Suwayomi 地址</label>
+        <input id="suwayomi-url" type="text" placeholder="http://localhost:4567">
+      </div>
+      <div class="field">
+        <label for="auto-start">开机启动</label>
+        <input id="auto-start" type="checkbox">
+      </div>
+      <button id="save-settings" type="button">保存配置</button>
+    </section>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

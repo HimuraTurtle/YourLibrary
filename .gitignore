@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+dist/
+
+# 敏感数据（勿提交）
+electron/settings.json
+electron/memory.json
+
+# 下载内容
+books/
+papers/
+manga/
+vendor/
+
+# 环境变量
+.env
+
+# 日志 / 临时
+*.log
+*.err
+head
+NVIDIA Corporation/
+
+# 系统
+.DS_Store

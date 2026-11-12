@@ -1,0 +1,43 @@
+[
+  {
+    "name": "DeepSeek",
+    "baseUrl": "https://api.deepseek.com/v1",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner",
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "visionModels": [
+      "deepseek-flash"
+    ]
+  },
+  {
+    "name": "千问 Qwen",
+    "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "models": [
+      "qwen-turbo",
+      "qwen-plus",
+      "qwen-max",
+      "qwen-long"
+    ],
+    "visionModels": [
+      "qwen-vl-plus",
+      "qwen-vl-max"
+    ]
+  },
+  {
+    "name": "智谱 GLM",
+    "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+    "models": [
+      "glm-4-plus",
+      "glm-4-air",
+      "glm-4-flash",
+      "glm-4-long"
+    ],
+    "visionModels": [
+      "glm-4v-plus",
+      "glm-4v-flash"
+    ]
+  }
+]

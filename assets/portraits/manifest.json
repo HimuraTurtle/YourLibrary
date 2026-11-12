@@ -1,0 +1,118 @@
+{
+  "defaultEmotion": "neutral",
+  "vocabulary": {
+    "neutral": "通常",
+    "smile": "微笑",
+    "happy": "开心",
+    "laugh": "大笑",
+    "worried": "担心",
+    "thinking": "思考",
+    "surprised": "惊讶",
+    "smug": "得意",
+    "angry": "生气",
+    "annoyed": "不满",
+    "sad": "难过"
+  },
+  "portraits": [
+    {
+      "file": "portrait-01.png",
+      "emotion": "neutral",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-02.png",
+      "emotion": "happy",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-03.png",
+      "emotion": "laugh",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-04.png",
+      "emotion": "smile",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-05.png",
+      "emotion": "happy",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-06.png",
+      "emotion": "worried",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-07.png",
+      "emotion": "thinking",
+      "width": 418,
+      "height": 417
+    },
+    {
+      "file": "portrait-08.png",
+      "emotion": "surprised",
+      "width": 418,
+      "height": 417
+    },
+    {
+      "file": "portrait-09.png",
+      "emotion": "smug",
+      "width": 418,
+      "height": 417
+    },
+    {
+      "file": "portrait-10.png",
+      "emotion": "angry",
+      "width": 418,
+      "height": 417
+    },
+    {
+      "file": "portrait-11.png",
+      "emotion": "annoyed",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-12.png",
+      "emotion": "angry",
+      "width": 418,
+      "height": 417
+    },
+    {
+      "file": "portrait-13.png",
+      "emotion": "sad",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-14.png",
+      "emotion": "smile",
+      "width": 418,
+      "height": 418
+    },
+    {
+      "file": "portrait-15.png",
+      "emotion": "surprised",
+      "width": 418,
+      "height": 418
+    }
+  ],
+  "situations": {
+    "idle": "neutral",
+    "greeting": "smile",
+    "click": "surprised",
+    "thinking": "thinking",
+    "searching": "thinking",
+    "chatting": "happy",
+    "farewell": "sad",
+    "dragging": "angry"
+  }
+}

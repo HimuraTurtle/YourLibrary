@@ -1,0 +1,27 @@
+{
+  "name": "your-library",
+  "version": "0.1.0",
+  "description": "你的图书馆 (Your Library) - retrieval core: ebook & paper search, bookshelf, bookmarks",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "cli": "tsx src/cli.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "start": "electron electron/main.cjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "electron": "^45.2.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
